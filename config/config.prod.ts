@@ -22,11 +22,8 @@ exports.static = {
 
 
 exports.mongoose = {
-  url: 'mongodb://' + env.DATABASE_MONGODB_USERNAME_PASSWORD + '@' + env.DATABASE_MONGODB_HOST_PORT + '/tomatobang',
+  url: 'mongodb://' + env.DATABASE_MONGODB_USERNAME_PASSWORD + '@' + env.DATABASE_MONGODB_HOST_PORT + '/tomato-pomodoro',
   options: {},
 };
 
-exports.serverPort = {
-  serverPort: env.serverPort || 3000,
-};
 

@@ -10,5 +10,6 @@ run/
 .DS_Store
 *.sw*
 *.un~
-typings/
+typings/app
+typings/config
 .nyc_output/
