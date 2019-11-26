@@ -1,7 +1,7 @@
 {
   "name": "tomato-pomodoro",
   "version": "1.0.0",
-  "description": "bill module for tomatobang",
+  "description": "pomodoro module for tomatobang",
   "private": true,
   "egg": {
     "declarations": true,
@@ -10,6 +10,7 @@
   "dependencies": {
     "consul": "^0.36.0",
     "egg": "^2.15.1",
+    "egg-redis": "^2.4.0",
     "egg-mongoose": "^2.1.1",
     "egg-scripts": "^2.11.0",
     "egg-validate": "^2.0.2",
@@ -29,9 +30,11 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=tomato-pomodoro",
+    "start": "egg-scripts start --title=tomato-pomodoro",
     "stop": "egg-scripts stop --title=tomato-pomodoro",
     "dev": "egg-bin dev",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "clean": "ets clean",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",

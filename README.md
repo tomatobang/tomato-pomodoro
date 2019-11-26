@@ -13,7 +13,7 @@ see [egg docs][egg] for more detail.
 ```bash
 $ npm i
 $ npm run dev
-$ open http://localhost:8005/
+$ open http://localhost:10005/
 ```
 
 ### Deploy

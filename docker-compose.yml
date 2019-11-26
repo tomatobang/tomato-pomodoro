@@ -1,0 +1,18 @@
+version: '3'
+networks:
+  api_server_default:
+    external: true
+services:
+  tb_pomodoro:
+    restart: unless-stopped
+    image: tb/tomato-pomodoro
+    network_mode: "host"
+    environment:
+      CONSUL_IP:
+      DATABASE_MONGODB_USERNAME_PASSWORD:
+      DATABASE_MONGODB_HOST_PORT:
+      REDIS_PORT:
+      REDIS_HOST:
+      REDIS_PASSWORD:
+    ports:
+     - "10005:10005"

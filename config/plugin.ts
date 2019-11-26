@@ -13,7 +13,10 @@ const plugin: EggPlugin = {
     enable: true,
     path: path.join(__dirname, '../lib/plugin/egg-consul'),
   },
-
+  redis: {
+    enable: true,
+    package: 'egg-redis',
+  },
   validate: {
     package: 'egg-validate',
   },
